@@ -144,3 +144,4 @@ dmypy.json
 # Custom
 project-env/
 src/db
+src/event_datafile_new.csv
