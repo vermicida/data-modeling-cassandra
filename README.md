@@ -13,8 +13,6 @@ They'd like a data engineer to create an Apache Cassandra database which can cre
   - [Creating the virtual environment](#creating-the-virtual-environment)
   - [Running Cassandra](#running-cassandra)
   - [Notebooks](#notebooks)
-  - [ETL](#etl-pipeline)
-- [To-Do list](#to-do-list)
 
 ## Structure<a name="structure"></a>
 
@@ -43,7 +41,7 @@ It is assumed that the tools below are properly installed locally:
 
 ## How to use<a name="how-to-use"></a>
 
-Here are listed the steps to run all the notebooks of the project.
+Here are listed the steps to run the ETL notebook of the project.
 
 ### Cloning the repository<a name="cloning-the-repository"></a>
 
@@ -102,7 +100,7 @@ mkdir db
 And now, start the Apache Cassandra instance:
 
 ```bash
-docker run -v $(pwd)/kk:/var/lib/cassandra \
+docker run -v $(pwd)/db:/var/lib/cassandra \
            -p 9042:9042 \
            --name cassandra \
            --rm \
