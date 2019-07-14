@@ -22,8 +22,9 @@ This tree shows the repository structure. Only the project's main files are desc
 .
 ├── images
 ├── src
-│   ├── event_data         # Log files sample
-│   ├── etl.ipynb          # Notebook to test the ETL pipeline
+│   ├── event_data           # Event files sample
+│   ├── etl.ipynb            # Notebook to test the ETL pipeline
+│   └── event_data_new.csv   # Aggregate events data
 ├── .editorconfig
 ├── .gitignore
 ├── README.md
